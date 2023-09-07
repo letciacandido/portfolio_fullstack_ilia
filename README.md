@@ -3,7 +3,7 @@ Exercício do curso "Desenvolvimento Full Stack - Modern Web" fornecido pela Il�
 
 A primeira entrega do exercício diz respeito à estruturação de uma página em HTML utilizando as tags ensinadas durante a primeira parte do curso, sessão de Modern Web, com temática "HTML5".
 
-
+Para meu projeto, escolhi o desenvolvimento do meu portfólio + CV online.
 
 
 ## Referência
