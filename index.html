@@ -153,16 +153,20 @@
         <div class="formulario-container">
             <p id="formulario-title">Vamos Conversar!</p>
 
-            <form action="" accept-charset="utf-8" action="" method="POST" enctype="text/plain">
+            <form accept-charset="utf-8" action="https://formsubmit.co/leticiacandidoarq@gmail.com" method="POST" enctype="text/plain">
                 <p class="label">Nome</p>
-                <input type="text" name="nome" placeholder="Digite aqui seu nome">
+                <input type="text" name="name" placeholder="Digite aqui seu nome" required>
                 <p class="label">E-mail</p>
-                <input type="email" name="email" placeholder="Digite aqui seu e-mail">
+                <input type="email" name="email" placeholder="Digite aqui seu e-mail" required>
                 <p class="label">Assunto</p>
-                <input type="text" name="assunto" placeholder="Digite aqui o assunto do e-mail">
+                <input type="text" placeholder="Digite aqui o assunto do e-mail" required>
                 <p class="label">Mensagem</p>
-                <textarea name="mensagem" id="mensagem" cols="10" rows="30"></textarea>
+                <textarea name="message" id="mensagem" cols="10" rows="30"></textarea>
                 <input type="submit" name="enviar" id="btn-enviar">
+
+                <input type="hidden" name="_subject" value="Novo Contato!">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
     </section><!--contato-->
