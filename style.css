@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Be+Vietnam+Pro:wght@100;200;300;400;500;900&');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-chumbo: #303030;
+    --color-cinza1: #8A8A8A;
+    --color-cinza2: #F5F5F5;
+    --color-ameixa: #45214A;
+    --color-roxo-noturno: #323050;
+    --color-azul-profundo: #21445B;
+    --color-verde-escuro: #1A6566;
+    --color-verde-claro: #5D8A66;
+
+    --font-logo: 'Baumans';
+    --font-LC: 'Be Vietnam Pro', sans-serif; 
+    font-family: var(--font-LC);
+    font-weight: 300;
+    font-style: normal;
+}
+
+body{
+    overflow-x: hidden;
+    flex-shrink: 1;
+}
+
+/* GERAL */
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 15%;
+}
+
+.hr{
+    align-self: center;
+    margin: 10px;
+    width: 80%;
+    height: 1px;
+    background-color: var(--color-cinza1);   
+}
+
+.ameixa{
+    background-color: var(--color-ameixa);
+}
+
+.roxo{
+    background-color: var(--color-roxo-noturno);
+}
+
+.azul{
+    background-color: var(--color-azul-profundo);
+}
+
+.verde-esc{
+    background-color: var(--color-verde-escuro);
+}
+
+.verde-cla{
+    background-color: var(--color-verde-claro);
+}
+
+/* media querie para telas menores */
+
+@media screen and (max-width: 480px) {
+    h3{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-left: 0;
+    }
+}
+
+/* FIM GERAL */
+/* SEÇÃO CABEÇALHO */
+
+.cabecalho{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu{
+    justify-content: end;
+}
+
+.menu .ul-menu{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+#logo{
+    flex: auto;
+    justify-content: left;
+    margin: 20px;
+    font-family: var(--font-logo);
+    font-size: 2rem;
+}
+
+/* media querie para telas menores */
+
+@media screen and (max-width: 480px) {
+    .menu .ul-menu{
+        display: none;
+    }
+}
+
+
+/* SEÇÃO CABEÇALHO */
+/* SEÇÃO BOAS-VINDAS */
+
+.boas-vindas{
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    align-content: flex-end;
+    gap: 30px;
+}
+
+#foto-leticia{
+    width: 318px;
+    height: auto;
+    flex-shrink: 0;
+    background-color: var(--color-cinza2);
+}
+
+#texto-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40rem;
+    height: 384px;
+}
+
+#ola{
+    font-size: 160px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#texto-hero p{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#texto-hero h1{
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 86.671%; 
+}
+
+#texto-hero strong{
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100.1%;
+}
+
+/* media querie para telas menores */
+
+@media screen and (max-width: 480px) {
+    .boas-vindas{
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 30%;
+    }
+
+    #foto-leticia{
+        width: auto;
+        height: 18rem;
+    }
+
+    #texto-hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+    
+    #ola{
+        font-size: 6rem;
+    }
+
+    #texto-hero p{
+        font-size: 1rem;
+    }
+
+    #texto-hero h1{
+        font-size: 1rem;
+    }
+
+    #texto-hero strong{
+        font-size: 2rem;
+    }
+}
+
+/* FIM SEÇÃO BOAS-VINDAS */
+/* Estilização SOBRE */
+
+.sobre{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10rem;
+    margin-right: 15%;
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre .bi{
+    font-size: 4rem;
+}
+
+#sobre-titulo{
+    width: 15rem;
+    margin-left: 15%;
+}
+
+.sobre article{
+    width: 40rem;
+}
+
+
+/* media querie para telas menores */
+
+@media screen and (max-width: 480px) {
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80vw;
+    }
+
+    .sobre .bi{
+        font-size: 3rem;
+    }
+
+    #sobre-titulo{
+        margin: auto;
+    }
+
+    .sobre article{
+        width: 90%;
+        text-align: justify;
+        font-size: .8rem;
+    }
+}
+
+/* FIM SEÇÃO SOBRE */
+/* Estilização  FORMACAO*/
+
+.formacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+#formacao-text{
+    position: static;
+    align-self: flex-start;
+}
+
+.formacao-container{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    align-items: center;
+}
+
+#linha-horizontal{
+    background-color: var(--color-chumbo);
+    height: 200px;
+    width: 1px;
+}
+
+.formacao-texto-direita{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 0px 30px 100px;
+}
+
+.formacao-texto-esquerda{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    padding: 100px 30px 0px 50px;
+}
+
+.faculdade{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+    #formacao-text{
+        align-self: center;
+    }
+
+    .formacao-container{
+        font-size: 80%;
+        padding: 20px;
+    }
+
+    .formacao-texto-direita{
+        padding: 0px 15px 50px;
+    }
+
+    .formacao-texto-esquerda{
+        padding: 100px 15px 0px 25px;
+    }
+
+}
+
+
+/* FIM SEÇÃO FORMACAO */
+/* Estilização EXPERIENCIAS e CURSOS */
+
+.section-cabecalho{
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.section-lista{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+/*------------------------------------------------------------------*/
+
+.section-slide{
+    display: flex;
+    flex-direction: column; 
+}
+
+.section-slide .bi {
+    font-size: 50px;
+    padding: 2rem;
+    margin: 0 3rem 0 3rem;
+}
+
+.section-cabecalho{
+    justify-content: space-around;
+}
+
+.section-title{
+    margin-left: 0;
+}
+
+.section-container{
+    position: relative;
+    padding: 15px;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.slider{
+    overflow-x: auto;
+}
+
+.container-setas{
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.section-slide a div{
+    width: 150px;
+    height: 130px;
+}
+
+.quadro{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-style: solid;
+    width: 70vw;
+    height: 400px;
+}
+
+
+@media screen and (max-width: 480px) {   
+    .section-cabecalho{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .section-lista{
+        display: none
+    }
+
+    .experiencias-container{
+        position: relative;
+        padding: 10px;
+        max-width: 70vw;
+    }
+
+    .section-slide a div{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .section-slide .bi{
+        font-size: 30px;
+        padding: 1rem 0;
+        margin: 0;
+    }
+
+}
+
+
+/* FIM SEÇÃO EXPERIENCIAS e CURSOS */
+/* Estilização CONTATO */
+
+.mensagem{
+    display: flex;
+    flex-direction: column;
+}
+
+.mensagem h1{
+    font-weight: 200;
+}
+
+.mensagem h2{
+    align-items: end;
+    font-weight: 200;
+    font-size: 4rem;
+    width: 20rem;
+    text-align: end;
+}
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10rem 15rem;
+}
+
+.mensagem span{
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.formulario-container{
+    background-color: var(--color-cinza2);  
+}
+
+#formulario-title{
+    font-weight: 600;
+    margin: 2rem;
+}
+
+form{
+    margin: 2rem;
+}
+
+input, textarea{
+    display: flex;
+    border: none;
+    width: 30rem;
+    margin: auto;
+    padding: 8px;
+}
+
+input #btn-enviar{
+    border: var(--color-chumbo) 2px solid;
+}
+
+form .label{
+    font-size: .8rem;
+    font-weight: 500;
+    padding: .2rem 0 .2rem 0;
+}
+
+#btn-enviar{
+    margin: 1rem;
+    background-color: var(--color-chumbo);
+    color: white;
+    padding: .7rem;
+    font-weight: 600;
+    width: 5rem;
+    justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+    .contato{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 4rem 2rem;
+    }
+
+    .mensagem{
+        width: 70vw;
+    }
+
+    .mensagem h1{
+        font-size: 1rem;
+    }
+
+    .mensagem span{
+        font-size: 3rem;
+    }
+
+    .mensagem h2{
+        font-size: 2rem;
+        width: 20rem;
+        align-self: flex-end;
+    }
+
+    .formulario-container{
+        margin-top: 3rem;  
+    }
+
+    input, textarea{
+        display: flex;
+        border: none;
+        width: 17rem;
+        margin: auto;
+        padding: 10px;
+    }
+
+}
+
+
+/* FIM SEÇÃO CONTATO */
+/* Estilização FOOTER */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-chumbo);
+    width: 100vw;
+    height: 5rem;
+    color: white;
+}
+
+.voltar-topo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.voltar-topo a{
+    color: white;
+}
+
+.redes{
+    display: flex;
+    gap: 1rem;
+}
+
+.redes a{
+    color: white;
+}
+
+.footer .bi{
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .footer .bi{
+        font-size: 1rem;
+    }
+
+    .footer p{
+        font-size: 60%;
+    }
+}
