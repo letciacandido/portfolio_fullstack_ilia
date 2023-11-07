@@ -18,7 +18,6 @@ for (let index = 0; index < listaSetaDireita.length; index++) {
             } else if(this.classList.contains('bi-arrow-left-circle-fill')){
                 slider.scrollLeft -= 100;
             }
-            
         }
     })    
 }

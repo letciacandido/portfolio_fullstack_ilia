@@ -602,3 +602,12 @@ form .label{
         font-size: 60%;
     }
 }
+
+
+.pagina-obrigada{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
